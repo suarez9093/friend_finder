@@ -2,24 +2,23 @@
 // ==============================================
 let express = require("express");
 let path = require("path");
+let parse = require("body-parser");
+let friends = require("./app/data/friends")
 
 // Express
 // ===============================================
 let app = express();
-let PORT = 3000;
+let PORT = process.env.PORT || 3000;
 
 // Express app that handles data parsing
-app.use(express.urlencoded({extended: true}));
-app.use(express.json());
+app.use(parse.urlencoded({ extended: true }));
+app.use(parse.json());
 
-// Data
-// ==================================================
-let friends = [{
-    name: "",
-    photo: "",
-    scores: []
-}]
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 
-// Routes
-app.get("/")
+app.listen(PORT, function(){
+    console.log("App listening on PORT: " + PORT);
+})
+
