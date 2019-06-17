@@ -6,7 +6,10 @@
     <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script> -->
+      <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 
@@ -173,46 +176,57 @@
         <a id="submit-button" class="btn btn-primary btn-lg" href="#" role="button">Submit</a>
         <hr>
 
-        <p><a href="#">API Friends List</a> | <a href="#">Github Repo</a></p>
+        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/suarez9093/friend_finder">Github
+                Repo</a></p>
 
 
     </div>
 
     <script type="text/javascript">
-    $("#submit-button").on("click", function(event){
-        event.preventDefault();
-        let results = {
-            name: [],
-            photo: [],
-            scores: []
+        $("#submit-button").on("click", function (event) {
+            event.preventDefault();
+            let newFriend = {
+                name: $("#name-input").val().trim(),
+                photo: $("#photo-link").val().trim(),
+                score: [$(".q1 option:selected").val(), $(".q1 option:selected").val(), $(".q2 option:selected").val(), $(".q3 option:selected").val(), $(".q4 option:selected").val(), $(".q5 option:selected").val(), $(".q6 option:selected").val(), $(".q7 option:selected").val(), $(".q8 option:selected").val(), $(".q9 option:selected").val(), $(".q10 option:selected").val(),]
 
-        };
-        results.name.push($("#name-input").val().trim())
-        results.photo.push($("#photo-link").val().trim())
-        results.scores.push($(".q1 option:selected").val());
-        results.scores.push($(".q2 option:selected").val());
-        results.scores.push($(".q3 option:selected").val());
-        results.scores.push($(".q4 option:selected").val());
-        results.scores.push($(".q5 option:selected").val());
-        results.scores.push($(".q6 option:selected").val());
-        results.scores.push($(".q7 option:selected").val());
-        results.scores.push($(".q8 option:selected").val());
-        results.scores.push($(".q9 option:selected").val());
-        results.scores.push($(".q10 option:selected").val());
-       
-        console.log("Name: " + results.name);
-        console.log("Photo: " + results.photo );
-        console.log("Scores: " + results.scores);
+                
+            };
+            // console.log("New Friend Name: ",  newFriend.name);
+            // console.log("Photo URL: ", newFriend.photo);
+            // console.log("Score: " + newFriend.score);
+
         
+          $.ajax({
+              type: "post", 
+              url: "/api/friends",
+              data: newFriend,
+              dataType: "json"}).then(function(data){
+              })
+              
 
-       
-    })
-    
-    
-    
-    
-    
-    
+
+            // results.name.push($("#name-input").val().trim())
+            // results.photo.push($("#photo-link").val().trim())
+            // results.scores.push($(".q1 option:selected").val());
+            // results.scores.push($(".q2 option:selected").val());
+            // results.scores.push($(".q3 option:selected").val());
+            // results.scores.push($(".q4 option:selected").val());
+            // results.scores.push($(".q5 option:selected").val());
+            // results.scores.push($(".q6 option:selected").val());
+            // results.scores.push($(".q7 option:selected").val());
+            // results.scores.push($(".q8 option:selected").val());
+            // results.scores.push($(".q9 option:selected").val());
+            // results.scores.push($(".q10 option:selected").val());
+
+            // console.log("Name: " + results.name);
+            // console.log("Photo: " + results.photo );
+            // console.log("Scores: " + results.scores);
+
+
+
+        })
+        
     </script>
 </body>
 
