@@ -13,16 +13,17 @@ module.exports = function (app) {
 
     app.post("/api/friends", function (req, res) {
         // friends.push(req.body);;
-        let user = req.body
-        console.log("New user: ", user);
+        // console.log("New user: ", user);
+        let user = req.body;
 
-        // User Name, photo and score info
-        for (i = 0; i < user.length; i++) {
-            let userScore = parseInt(user[i].scores);
-            console.log("User scores: " + userScore);
+        // // User Name, photo and score info
+        for (let i = 0; i < user.score.length; i++) {
+            
+            user.score[i] = parseInt(user.score[i]);
+            console.log("User score: " + user.score[i]);
         }
         // Database of friends
-            for (i = 0; i < friends.length; i++) {
+            for (let i = 0; i < friends.length; i++) {
                 console.log("Possible Friends: ", friends[i]);
                 let friendScores = friends[i].scores;
                 console.log("Friend Scores: " + friendScores);
