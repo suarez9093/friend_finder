@@ -9,7 +9,7 @@
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js"
 	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script> -->
-      <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 
@@ -21,19 +21,19 @@
         <hr>
         <h2>About You</h2>
         <h3>Name (Required)</h3>
-        <input type="text" id="name-input">
+        <input type="text" id="name-input" class="form-control" required>
         <br>
         <h3>Link to Photo Image (Required)</h3>
-        <input type="link" id="photo-link">
+        <input type="link" id="photo-link" class="form-control" required>
         <hr>
 
         <div id="questions">
             <!-- ----------------------------- -->
-            <div class="q1">
+            <div>
                 <h3>Question 1</h3>
                 <p>You find it easy to get along with others</p>
-                <select>
-                    <option value="">Select an option</option>
+                <select data-placeholder="" class="chosen-select" id="q1">
+                    <option selected>---</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -43,11 +43,11 @@
             </div>
             <br>
             <!-- ----------------------------- -->
-            <div class="q2">
+            <div>
                 <h3>Question 2</h3>
                 <p>You have hobbies outside of work</p>
-                <select>
-                    <option value="">Select an option</option>
+                <select data-placeholder="" class="chosen-select" id="q2">
+                    <option selected>---</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -58,11 +58,11 @@
             <br>
             <!-- ----------------------------- -->
 
-            <div class="q3">
+            <div>
                 <h3>Question 3</h3>
                 <p>You are close with your family</p>
-                <select>
-                    <option value="">Select an option</option>
+                <select data-placeholder="" class="chosen-select" id="q3">
+                    <option selected>---</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -72,11 +72,11 @@
             </div>
             <!-- ----------------------------- -->
             <br>
-            <div class="q4">
+            <div>
                 <h3>Question 4</h3>
                 <p>You are confortable meeting new people</p>
-                <select>
-                    <option value="">Select an option</option>
+                <select data-placeholder="" class="chosen-select" id="q4">
+                    <option selected>---</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -86,11 +86,11 @@
             </div>
             <!-- ----------------------------- -->
             <br>
-            <div class="q5">
+            <div>
                 <h3>Question 5</h3>
                 <p>People would call you an extrovert</p>
-                <select>
-                    <option value="">Select an option</option>
+                <select data-placeholder="" class="chosen-select" id="q5">
+                    <option selected>---</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -100,11 +100,11 @@
             </div>
             <!-- ----------------------------- -->
             <br>
-            <div class="q6">
+            <div>
                 <h3>Question 6</h3>
                 <p>You have goals</p>
-                <select>
-                    <option value="">Select an option</option>
+                <select data-placeholder="" class="chosen-select" id="q6">
+                    <option selected>---</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -114,11 +114,11 @@
             </div>
             <!-- ----------------------------- -->
             <br>
-            <div class="q7">
+            <div>
                 <h3>Question 7</h3>
                 <p>You are physically active</p>
-                <select>
-                    <option value="">Select an option</option>
+                <select data-placeholder="" class="chosen-select" id="q7">
+                    <option selected>---</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -128,11 +128,11 @@
             </div>
             <!-- ----------------------------- -->
             <br>
-            <div class="q8">
+            <div>
                 <h3>Question 8</h3>
                 <p>You like to eat sushi</p>
-                <select>
-                    <option value="">Select an option</option>
+                <select data-placeholder="" class="chosen-select" id="q8">
+                    <option selected>---</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -142,11 +142,11 @@
             </div>
             <!-- ----------------------------- -->
             <br>
-            <div class="q9">
+            <div>
                 <h3>Question 9</h3>
                 <p>Others speak highly of you</p>
-                <select>
-                    <option value="">Select an option</option>
+                <select data-placeholder="" class="chosen-select" id="q9">
+                    <option selected>---</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -156,11 +156,11 @@
             </div>
             <!-- ----------------------------- -->
             <br>
-            <div class="q10">
+            <div>
                 <h3>Question 10</h3>
                 <p>You believe you can do anything you set your mind to</p>
-                <select>
-                    <option value="">Select an option</option>
+                <select data-placeholder="" class="chosen-select" id="q10">
+                    <option selected>---</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -173,7 +173,7 @@
         </div>
         <br>
 
-        <a id="submit-button" class="btn btn-primary btn-lg" href="#" role="button">Submit</a>
+        <button id="submit-button" class="btn btn-primary btn-lg" type="submit">Submit</button>
         <hr>
 
         <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/suarez9093/friend_finder">Github
@@ -182,28 +182,81 @@
 
     </div>
 
+    <!-- Modal -->
+    <div id="resultsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                    <h2 class="modal-title"><strong>Best Match</strong></h2>
+                </div>
+
+                <div class="modal-body">
+                    <h2 id="matchName"></h2>
+                    <img id="matchImg" src="https://via.placeholder.com/400x400"
+                        alt="Placeholder image in case user pic doesn't show" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script type="text/javascript">
-        $("#submit-button").on("click", function (event) {
+        $("#submit-button").on("click", function () {
             event.preventDefault();
-            let newFriend = {
-                name: $("#name-input").val().trim(),
-                photo: $("#photo-link").val().trim(),
-                score: [$(".q1 option:selected").val(), $(".q1 option:selected").val(), $(".q2 option:selected").val(), $(".q3 option:selected").val(), $(".q4 option:selected").val(), $(".q5 option:selected").val(), $(".q6 option:selected").val(), $(".q7 option:selected").val(), $(".q8 option:selected").val(), $(".q9 option:selected").val(), $(".q10 option:selected").val(),]
+            function validateForm() {
+                let isValid = true;
 
-                
+                $(".form-control").each(function () {
+                    if ($(this).val() === "") isValid = false;
+                });
+                $(".chosen-select").each(function () {
+                    if ($(this).val === "") isValid = false;
+                });
+                return isValid;
             };
-            // console.log("New Friend Name: ",  newFriend.name);
-            // console.log("Photo URL: ", newFriend.photo);
-            // console.log("Score: " + newFriend.score);
 
-        
-          $.ajax({
-              type: "post", 
-              url: "/api/friends",
-              data: newFriend,
-              dataType: "json"}).then(function(data){
-              })
-              
+            if (validateForm() == true) {
+                let userData = {
+                    name: $("#name-input").val(),
+                    photo: $("#photo-link").val(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+                };
+                var currentURL = window.location.origin;
+                $.post(currentURL + "/api/friends", userData, function (data) {
+                    $("#matchName").text(data.name);
+                    $("#matchImg").attr("src", data.photo);
+                    $("#resultsModal").modal("toggle");
+                });
+            } else {
+                alert("Please fill out all fields before submitting!");
+            }
+            return false;
+        });
+            
+    
+
+
+
+
+
 
 
             // results.name.push($("#name-input").val().trim())
@@ -225,8 +278,7 @@
 
 
 
-        })
-        
+     
     </script>
 </body>
 
