@@ -16,20 +16,27 @@ module.exports = function (app) {
         // console.log("New user: ", user);
         let user = req.body;
 
-        // // User Name, photo and score info
-        for (let i = 0; i < user.score.length; i++) {
+        // // // User Name, photo and score info
+        // for (let i = 0; i < user.score.length; i++) {
             
-            user.score[i] = parseInt(user.score[i]);
-            console.log("User score: " + user.score[i]);
-        }
-        // Database of friends
-            for (let i = 0; i < friends.length; i++) {
-                console.log("Possible Friends: ", friends[i]);
-                let friendScores = friends[i].scores;
-                console.log("Friend Scores: " + friendScores);
+        //     user.score[i] = parseInt(user.score[i]);
+        //     console.log("User score: " + user.score[i]);
+        // }
+        // // Database of friends
+        //     for (let i = 0; i < friends.length; i++) {
+        //         console.log("Possible Friends: ", friends[i]);
+        //         let friendScores = friends[i].scores;
+        //         console.log("Friend Scores: " + friendScores);
 
             
-            }
+        //     }
+
+        // Trying a function
+        // ===========================================
+        function diff(user, friends){
+            
+
+        }
 
 
         
