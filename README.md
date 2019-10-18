@@ -1,13 +1,34 @@
-# friend_finder
+ <h3 align="center">Friend Finder</h3>
+ 
+![Project Name](gif/friendgif.gif)
 
-<b>Objective:<b>
-  Create an app that allows users to match other user's personality and characteristics based on questions that they're asked. 
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  
+  </a>
+  <p align="center">
+    <br />
+    <br />
+    <a href="https://stark-fortress-66669.herokuapp.com/">View live Demo</a>
+  </p>
+</p>
 
-<h3>Technologies Used:</h3>
-<ul>
-<li>Bootstrap</li> 
-<li>jQuery</li>
-<li>Express</li>
-<li>HTML</li>
-<li>AJAX</li>
-</ul>
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+An app that allows users to match other user's personality and characteristics based on questions that they're asked.
+
+### Built With
+* [Bootstrap](https://getbootstrap.com/)
+* [jQuery](https://jquery.com/)
+* [Express](https://expressjs.com/)
+* [HTML](https://www.w3schools.com/html/)
+
+<!-- CONTACT -->
+## Contact
+
+Alex Suarez - [LinkedIn](https://www.linkedin.com/in/alexsuarez9093/) - suarez9093@hotmail.com
+
+
+
